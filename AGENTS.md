@@ -104,6 +104,21 @@ This project has domain-specific skills available in `**/skills/**`. You MUST ac
 
 - Laravel can be deployed using [Laravel Cloud](https://cloud.laravel.com/), which is the fastest way to deploy and scale production Laravel applications.
 
+=== herd rules ===
+
+# Laravel Herd
+
+- The application is served by Laravel Herd at `https?://[kebab-case-project-dir].test`. Use the `get-absolute-url` tool to generate valid URLs. Never run commands to serve the site. It is always available.
+- Use the `herd` CLI to manage services, PHP versions, and sites (e.g. `herd sites`, `herd services:start <service>`, `herd php:list`). Run `herd list` to discover all available commands.
+
+=== folio/core rules ===
+
+# Laravel Folio
+
+- Laravel Folio is a powerful page-based router that simplifies routing in Laravel applications.
+- Routes are generated automatically by creating Blade templates in `resources/views/pages`.
+- IMPORTANT: Activate 'folio-routing' when working with Folio, pages, routes, route parameters, model binding, middleware, or `resources/views/pages`.
+
 === laravel/core rules ===
 
 # Do Things the Laravel Way

@@ -10,6 +10,7 @@
     "sail": false,
     "skills": [
         "infer-conventions",
+        "folio-routing",
         "laravel-best-practices",
         "testing-best-practices",
         "tailwindcss-development"
