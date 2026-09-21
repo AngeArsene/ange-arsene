@@ -4,6 +4,70 @@
 @source '../../storage/framework/views/*.php';
 
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-sans: 'Manrope', ui-sans-serif, system-ui, sans-serif;
+    --font-display: 'Fraunces', Georgia, serif;
+    --color-ink: #0a0c0f;
+    --color-surface: #14171c;
+    --color-surface-alt: #1b1f25;
+    --color-paper: #eceef1;
+    --color-muted: #9aa1ab;
+    --color-faint: #5c6470;
+    --color-gold: #c9a24b;
+    --color-gold-light: #d4b56f;
+    --color-teal: #2f9c82;
+    --color-danger: #d1603d;
+}
+
+:root {
+    color-scheme: dark;
+    font-synthesis: none;
+    --rail-width: 88px;
+}
+
+* {
+    border-color: rgba(236, 237, 239, 0.09);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0a0c0f;
+    color: #eceef1;
+    font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif;
+}
+
+::selection {
+    background: #c9a24b;
+    color: #0a0c0f;
+}
+
+.display-type {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 500;
+    letter-spacing: -0.04em;
+}
+
+.editorial-grid {
+    background-image: linear-gradient(rgba(236, 237, 239, 0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(236, 237, 239, 0.025) 1px, transparent 1px);
+    background-size: 48px 48px;
+}
+
+.ghost-wordmark {
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(201, 162, 75, 0.22);
+}
+
+@media (max-width: 767px) {
+    :root {
+        --rail-width: 0px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
 }
