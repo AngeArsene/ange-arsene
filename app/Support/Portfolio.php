@@ -95,12 +95,25 @@ final class Portfolio
     private static function projects(): array
     {
         return [
-            ['number' => '01', 'category' => 'Websites', 'title' => 'AllReady237', 'description' => 'Multi-vendor e-commerce platform active in Douala and Yaoundé.', 'tags' => ['WordPress', 'WooCommerce', 'WCFM'], 'url' => null],
-            ['number' => '02', 'category' => 'Websites', 'title' => 'Optimum Fly', 'description' => 'Bilingual website for a Cameroon-based visa and immigration company.', 'tags' => ['WordPress', 'Elementor', 'FR / EN'], 'url' => null],
-            ['number' => '03', 'category' => 'Websites', 'title' => 'Arno But', 'description' => 'E-commerce platform for personalized clothing solutions online.', 'tags' => ['WordPress', 'E-commerce'], 'url' => null],
-            ['number' => '04', 'category' => 'Full-Stack Apps', 'title' => 'Task Management System', 'description' => 'Laravel and React workspace with drag-and-drop interactions and Zustand state management.', 'tags' => ['Laravel', 'React', 'Zustand'], 'url' => null],
-            ['number' => '05', 'category' => 'Full-Stack Apps', 'title' => 'Chirper', 'description' => 'Laravel social app with likes, bookmarks, policies, rate limiting and tested workflows.', 'tags' => ['Laravel', 'PHP', 'Pest'], 'url' => 'https://github.com/AngeArsene/chirper'],
-            ['number' => '06', 'category' => 'Packages', 'title' => 'WooCommerce Smobilpay Gateway', 'description' => 'Payment gateway plugin for MTN MoMo and Orange Money transactions.', 'tags' => ['PHP', 'WordPress', 'Smobilpay'], 'url' => null],
+            ['number' => '01', 'category' => 'Websites', 'title' => 'Chaudronnerie Tuyauterie St Laurent', 'description' => 'Professional website for Chaudronnerie Tuyauterie St Laurent.', 'tags' => ['WordPress', 'Elementor'], 'url' => 'https://chaudronneriestlaurent.gogency.fr/'],
+            ['number' => '02', 'category' => 'Websites', 'title' => 'Le Four à Bois', 'description' => 'Restaurant website for Le Four à Bois.', 'tags' => ['WordPress', 'Elementor'], 'url' => 'https://four-a-bois.gogency.fr/'],
+            ['number' => '03', 'category' => 'Websites', 'title' => 'Pony Gones', 'description' => 'Website for Pony Gones.', 'tags' => ['WordPress', 'Responsive Design'], 'url' => 'https://www.pony-gones69.fr/'],
+            ['number' => '04', 'category' => 'Websites', 'title' => 'Dynam’Êcens', 'description' => 'Professional website for Dynam’Êcens.', 'tags' => ['WordPress', 'Elementor'], 'url' => 'https://dynamecens-86.gogency.fr/'],
+            ['number' => '05', 'category' => 'Websites', 'title' => 'Iroise Demolition', 'description' => 'Website for Iroise Demolition.', 'tags' => ['WordPress', 'Responsive Design'], 'url' => 'https://iroise-demolition.gogency.fr/'],
+            ['number' => '06', 'category' => 'Websites', 'title' => 'LC MECA', 'description' => 'Professional website for LC MECA.', 'tags' => ['WordPress', 'Elementor'], 'url' => 'https://lcmeca.gogency.fr/'],
+            ['number' => '07', 'category' => 'Websites', 'title' => 'Institut Beauté Nature Zen', 'description' => 'Website for Institut Beauté Nature Zen in Ilharre.', 'tags' => ['WordPress', 'Responsive Design'], 'url' => 'https://www.nature-zen-esthetique-ilharre.fr/'],
+            ['number' => '08', 'category' => 'Websites', 'title' => 'EMDG', 'description' => 'Professional website for EMDG.', 'tags' => ['WordPress', 'Elementor'], 'url' => 'https://www.emdg.fr/'],
+            ['number' => '09', 'category' => 'Websites', 'title' => 'The WoodLintz Company', 'description' => 'Website for The WoodLintz Company.', 'tags' => ['WordPress', 'Responsive Design'], 'url' => 'https://woodlintz.fr/'],
+            ['number' => '10', 'category' => 'Websites', 'title' => 'Le 19 Cent 73', 'description' => 'Restaurant website for Le 19 Cent 73.', 'tags' => ['WordPress', 'Elementor'], 'url' => 'https://restaurant-le-19cent73.gogency.fr/'],
+            ['number' => '01', 'category' => 'Full-Stack Apps', 'title' => 'Chirper', 'description' => 'Laravel social app with likes, bookmarks, policies, rate limiting and tested workflows.', 'tags' => ['Laravel', 'PHP', 'Pest'], 'url' => 'https://github.com/AngeArsene/chirper'],
+            ['number' => '02', 'category' => 'Full-Stack Apps', 'title' => 'Car Findal Service', 'description' => 'Full-stack application project for a car-finding service.', 'tags' => ['PHP', 'Web App'], 'url' => 'https://github.com/AngeArsene/Car_Findal_Service'],
+            ['number' => '03', 'category' => 'Full-Stack Apps', 'title' => 'WhatsApp Campaign Hub', 'description' => 'WhatsApp marketing application for campaign and contact workflows.', 'tags' => ['Laravel', 'WhatsApp API'], 'url' => 'https://github.com/AngeArsene/WhatsApp_Campaign_Hub'],
+            ['number' => '04', 'category' => 'Full-Stack Apps', 'title' => 'TaskFlow', 'description' => 'Task and workflow management application.', 'tags' => ['Laravel', 'React'], 'url' => 'https://github.com/AngeArsene/TaskFlow'],
+            ['number' => '05', 'category' => 'Full-Stack Apps', 'title' => 'Attendance Monitoring System', 'description' => 'Application for managing and monitoring attendance records.', 'tags' => ['PHP', 'Web App'], 'url' => 'https://github.com/AngeArsene/Attendance-Monitoring-System'],
+            ['number' => '01', 'category' => 'Packages', 'title' => 'chat', 'description' => 'Reusable package project published on GitHub.', 'tags' => ['PHP', 'Package'], 'url' => 'https://github.com/AngeArsene/chat'],
+            ['number' => '02', 'category' => 'Packages', 'title' => 'woowa-webhooks', 'description' => 'Reusable webhook package project published on GitHub.', 'tags' => ['PHP', 'Webhooks'], 'url' => 'https://github.com/AngeArsene/woowa-webhooks'],
+            ['number' => '03', 'category' => 'Packages', 'title' => 'wc-smobilpay', 'description' => 'WooCommerce Smobilpay integration package for mobile-money payments.', 'tags' => ['PHP', 'WooCommerce', 'Smobilpay'], 'url' => 'https://github.com/AngeArsene/wc-smobilpay'],
+            ['number' => '04', 'category' => 'Packages', 'title' => 'PHP MVC Framework', 'description' => 'Lightweight PHP MVC framework project built for reusable application foundations.', 'tags' => ['PHP', 'MVC'], 'url' => 'https://github.com/AngeArsene/php_mvc_framework'],
         ];
     }
 
