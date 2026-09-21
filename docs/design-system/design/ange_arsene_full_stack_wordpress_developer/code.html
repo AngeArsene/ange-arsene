@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'tertiary-fixed-dim': '#95ccff', 'error': '#ffb4ab', 'on-secondary-container': '#9db7da', 'primary': '#8cebff', 'on-secondary-fixed-variant': '#2e4866', 'primary-fixed-dim': '#65d6ec', 'inverse-surface': '#d5e3fb', 'on-secondary': '#16324e', 'on-surface': '#d5e3fb', 'surface': '#051425', 'surface-container-low': '#0e1c2d', 'secondary-fixed-dim': '#aec9ec', 'surface-tint': '#65d6ec', 'on-secondary-fixed': '#001d36', 'on-tertiary': '#003352', 'on-primary': '#00363e', 'secondary-fixed': '#d1e4ff', 'surface-container-highest': '#283648', 'background': '#051425', 'primary-fixed': '#a3eeff', 'tertiary-container': '#8dc6fb', 'surface-dim': '#051425', 'surface-variant': '#283648', 'outline-variant': '#3d494b', 'error-container': '#93000a', 'on-surface-variant': '#bcc9cc', 'surface-container-high': '#1d2b3d', 'on-background': '#d5e3fb', 'surface-container-lowest': '#010f1f', 'on-primary-fixed-variant': '#004e5a', 'on-tertiary-fixed-variant': '#004a75', 'on-error-container': '#ffdad6', 'on-tertiary-fixed': '#001d32', 'primary-container': '#5fd0e6', 'tertiary-fixed': '#cde5ff', 'on-primary-container': '#005764', 'outline': '#879396', 'on-tertiary-container': '#025381', 'secondary-container': '#2e4866', 'surface-bright': '#2c3a4c', 'on-primary-fixed': '#001f25', 'inverse-primary': '#006877', 'secondary': '#aec9ec', 'tertiary': '#c2e0ff', 'on-error': '#690005', 'surface-container': '#122032', 'inverse-on-surface': '#233143' }, borderRadius: { 'DEFAULT': '0.125rem', 'lg': '0.25rem', 'xl': '0.5rem', 'full': '0.75rem' }, spacing: { 'grid-unit': '4px', 'space-2': '0.5rem', 'space-3': '0.75rem', 'space-24': '6rem', 'gutter-mobile': '1rem', 'space-12': '3rem', 'space-16': '4rem', 'space-6': '1.5rem', 'space-4': '1rem', 'max-width': '1200px', 'space-8': '2rem', 'space-1': '0.25rem', 'gutter-desktop': '2rem' }, fontFamily: { 'headline-lg-mobile': ['JetBrains Mono'], 'body-sm': ['Fira Sans'], 'body-lg': ['Fira Sans'], 'label-sm': ['JetBrains Mono'], 'headline-lg': ['JetBrains Mono'], 'display-mobile': ['JetBrains Mono'], 'headline-md': ['JetBrains Mono'], 'label-md': ['JetBrains Mono'], 'display': ['JetBrains Mono'], 'headline-sm': ['JetBrains Mono'], 'code-snippet': ['JetBrains Mono'], 'body-md': ['Fira Sans'] }, fontSize: { 'headline-lg-mobile': ['1.75rem', { lineHeight: '1.3', letterSpacing: '-0.01em', fontWeight: '600' }], 'body-sm': ['0.875rem', { lineHeight: '1.5', letterSpacing: '0.01em', fontWeight: '400' }], 'body-lg': ['1.125rem', { lineHeight: '1.6', letterSpacing: '0.01em', fontWeight: '400' }], 'label-sm': ['0.6875rem', { lineHeight: '1.2', letterSpacing: '0.06em', fontWeight: '500' }], 'headline-lg': ['2.25rem', { lineHeight: '1.25', letterSpacing: '-0.02em', fontWeight: '600' }], 'display-mobile': ['2.25rem', { lineHeight: '1.2', letterSpacing: '-0.02em', fontWeight: '700' }], 'headline-md': ['1.5rem', { lineHeight: '1.35', letterSpacing: '-0.01em', fontWeight: '600' }], 'label-md': ['0.8125rem', { lineHeight: '1.2', letterSpacing: '0.04em', fontWeight: '500' }], 'display': ['3.25rem', { lineHeight: '1.15', letterSpacing: '-0.03em', fontWeight: '700' }], 'headline-sm': ['1.125rem', { lineHeight: '1.4', letterSpacing: '0em', fontWeight: '600' }], 'code-snippet': ['0.875rem', { lineHeight: '1.6', letterSpacing: '0em', fontWeight: '400' }], 'body-md': ['1rem', { lineHeight: '1.55', letterSpacing: '0em', fontWeight: '400' }] } } } };</script></head><body class="bg-background font-body-md text-on-background min-h-screen relative antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-md border-b border-outline-variant/40"><div class="h-16 max-w-max-width mx-auto px-gutter-mobile lg:px-gutter-desktop flex items-center justify-between gap-space-4"><div class="flex items-center gap-space-3"><img alt="Ange Arsene Engineering Monogram" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XqpxNOBl8k5gjuvBZy3dhIf9R9QBctghiuL8iXutmQhowC_n2fO-pCVZzjx-RgtVyWxJpygv7TUQJozkUXJdnvsLXuvKVfnCtxJMsvxDXKGXRn1C9xjD3aQFFEy7CZMtXfV-UdZZfnB4uHCy4TcAeAU-WtuMkIWYIRZ6WSrwzxkLjaNLu8N4PlSQPqoxmzGf6IJ1lVVmolmo2n3VgpdS9OMY5cfljZzfJl1GFZGBoasaO8Cwn9NnFc_n4"/><div class="flex flex-col"><div class="flex items-center gap-space-2"><span class="font-label-md text-label-md text-primary font-semibold tracking-wider">ANGE ARSENE // DEV</span></div><div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant">Available for projects</span></div></div></div><nav class="hidden lg:flex items-center gap-space-6" data-active-classes="text-primary border-b-2 border-primary"><a aria-current="page" class="font-label-md transition-colors py-space-1 text-primary border-b-2 border-primary" data-path="home" href="#">Home</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-space-1" data-path="about" href="#">About</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-space-1" data-path="experience" href="#">Experience</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-space-1" data-path="projects" href="#">Projects</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-space-1" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-3"><div class="flex items-center p-0.5 rounded bg-surface-container border border-outline-variant/60 font-label-sm text-label-sm"><button class="px-2 py-0.5 rounded bg-secondary-container text-primary font-semibold" type="button">EN</button><button class="px-2 py-0.5 rounded text-on-surface-variant hover:text-on-surface transition-colors" type="button">FR</button></div><a class="p-1.5 rounded border border-outline-variant/60 bg-surface-container text-on-surface-variant hover:text-primary hover:border-primary-container transition-all flex items-center justify-center" href="https://github.com/AngeArsene" rel="noopener noreferrer" target="_blank" title="GitHub Profile"><span class="material-symbols-outlined text-[18px]">code</span></a><div class="relative group"><button class="flex items-center gap-1 px-2.5 py-1 rounded border border-outline-variant/60 bg-surface-container text-on-surface hover:text-primary hover:border-primary-container font-label-sm text-label-sm transition-all" type="button"><span class="material-symbols-outlined text-[16px]">description</span><span>CV</span><span class="material-symbols-outlined text-[14px]">expand_more</span></button><div class="absolute right-0 mt-1 w-44 py-1 rounded bg-surface-container-high border border-outline-variant/80 hidden group-hover:block z-50 shadow-xl"><a class="flex items-center gap-2 px-3 py-1.5 font-label-sm text-label-sm text-on-surface hover:bg-secondary-container hover:text-primary transition-colors" href="/downloads/Ange_Arsene_Resume.pdf"><span class="material-symbols-outlined text-[14px]">download</span><span>Resume (EN)</span></a><a class="flex items-center gap-2 px-3 py-1.5 font-label-sm text-label-sm text-on-surface hover:bg-secondary-container hover:text-primary transition-colors" href="/downloads/Ange_Arsene_Resume_FR.pdf"><span class="material-symbols-outlined text-[14px]">download</span><span>CV (FR)</span></a></div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Blueprint Coordinate Grid Hero Container -->
+<div class="relative w-full overflow-hidden bg-surface py-space-16 lg:py-space-24">
+<!-- Schematic Hairline Grid Background Simulation -->
+<div class="absolute inset-0 pointer-events-none opacity-25">
+<svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="24" id="blueprint-grid" patternunits="userSpaceOnUse" width="24">
+<path class="text-secondary-container" d="M 24 0 L 0 0 0 24" fill="none" stroke="currentColor" stroke-width="0.5"></path>
+</pattern>
+</defs>
+<rect fill="url(#blueprint-grid)" height="100%" width="100%"></rect>
+</svg>
+</div>
+<div class="relative max-w-[1080px] mx-auto px-gutter-mobile lg:px-gutter-desktop flex flex-col items-start">
+<!-- System Overline Badge -->
+<div class="flex items-center gap-space-2 px-space-3 py-1 bg-surface-container rounded border border-secondary-container mb-space-6">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+<span class="font-label-sm text-label-sm text-primary tracking-widest uppercase">// FULL-STACK ENGINEER &amp; WORDPRESS SPECIALIST</span>
+</div>
+<!-- Main Headline with exact cyan accent -->
+<h1 class="font-headline-lg text-headline-lg lg:text-display lg:font-display text-on-surface max-w-4xl tracking-tight mb-space-6">
+        Building high-performance web applications and <span class="text-primary-container">mission-critical WordPress integrations</span>.
+      </h1>
+<!-- Bio / Narrative Subtitle -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl leading-relaxed mb-space-8">
+        Full-Stack Engineer with 3+ years of experience building WordPress/Elementor/WP Bakery sites and full-stack web apps with Laravel, React and Inertia.js. Strong background in payment-gateway integrations, WhatsApp API automation, e-commerce, performance optimisation, technical SEO and WordPress security. Based in Douala, Cameroon — remote ready.
+      </p>
+<!-- Action Cluster -->
+<div class="flex flex-wrap items-center gap-space-4 mb-space-8 w-full sm:w-auto">
+<a class="inline-flex items-center justify-center gap-2 h-[42px] px-space-6 rounded-xl bg-primary-container text-surface font-label-md text-label-md font-semibold hover:bg-primary-fixed-dim transition-colors" href="#featured-projects">
+<span>Explore Projects</span>
+<span class="material-symbols-outlined text-[16px]">arrow_downward</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2 h-[42px] px-space-6 rounded-xl bg-surface-container border border-secondary-container text-on-surface font-label-md text-label-md hover:bg-on-secondary hover:border-outline hover:text-primary transition-all" href="#contact-band">
+<span class="material-symbols-outlined text-[16px] text-primary">send</span>
+<span>Get in Touch</span>
+</a>
+</div>
+<!-- Quick Technical Specs Pills -->
+<div class="flex flex-wrap items-center gap-space-2 pt-space-4 border-t border-secondary-container/40 w-full">
+<span class="font-label-sm text-label-sm text-on-surface-variant mr-space-2">TECH SPECS:</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container border border-secondary-container text-secondary">PHP 8+</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container border border-secondary-container text-secondary">Laravel 11+</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container border border-secondary-container text-secondary">React</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container border border-secondary-container text-secondary">Inertia.js</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container border border-secondary-container text-secondary">WordPress / Elementor</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container border border-secondary-container text-secondary">Smobilpay / MoMo</span>
+</div>
+</div>
+</div>
+<!-- Proof Points & Impact Metrics Section (Dense 4-column bordered grid) -->
+<div class="w-full bg-surface-container-low border-y border-secondary-container/60">
+<div class="max-w-[1080px] mx-auto px-gutter-mobile lg:px-gutter-desktop py-space-8">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 border border-secondary-container bg-surface divide-y sm:divide-y-0 sm:divide-x divide-secondary-container">
+<!-- Metric 1 -->
+<div class="p-space-6 flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-2">EXPERIENCE</span>
+<div>
+<div class="font-display text-headline-lg lg:text-display text-primary font-bold">3+</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-1">Years Production Delivery</p>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="p-space-6 flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-2">DEPLOYMENTS</span>
+<div>
+<div class="font-display text-headline-lg lg:text-display text-primary font-bold">10+</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-1">Client Sites Shipped (Elementor &amp; WP)</p>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="p-space-6 flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-2">LOCALIZATION</span>
+<div>
+<div class="font-display text-headline-lg lg:text-display text-primary font-bold">100%</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-1">Bilingual Deliverables (FR / EN)</p>
+</div>
+</div>
+<!-- Metric 4 -->
+<div class="p-space-6 flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-2">PIPELINES</span>
+<div>
+<div class="font-headline-lg text-headline-md text-primary font-bold flex items-center gap-1.5 h-[56px]">
+<span class="material-symbols-outlined text-[28px] text-primary">verified_user</span>
+<span>SECURE</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-1">Fintech &amp; WhatsApp API Pipelines</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Selected Featured Work Section -->
+<section class="w-full py-space-16 lg:py-space-24 bg-surface" id="featured-projects">
+<div class="max-w-[1080px] mx-auto px-gutter-mobile lg:px-gutter-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-12 pb-space-4 border-b border-secondary-container">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">// REPOSITORY INDEX</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Selected Featured Work</h2>
+</div>
+<div class="mt-4 md:mt-0 font-label-sm text-label-sm text-on-surface-variant flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>Verified Production &amp; Architecture Repos</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-6">
+<!-- Project Card 1: WhatsApp Campaign Hub -->
+<div class="flex flex-col bg-surface-container rounded-xl border border-secondary-container hover:border-outline transition-colors overflow-hidden group">
+<!-- Card Header Terminal Bar -->
+<div class="flex items-center justify-between px-space-4 py-2 bg-secondary-container/40 border-b border-secondary-container">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-error/70"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-primary/70"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim/70"></span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">FullStackApp</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface border border-secondary-container text-primary font-mono font-semibold">SOURCE</span>
+</div>
+<!-- Thumbnail Image -->
+<div class="relative w-full aspect-[16/9] bg-surface-container-highest overflow-hidden border-b border-secondary-container">
+<img alt="WhatsApp Campaign Hub Thumbnail" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida/AEtjO1VS1TQcXZ-feh6LriWqN_vFt5Gx1PmpaaQStjixcTj7Su-mCS-H7SHJuSvkKr1AHIi80wXCOsZ4GFmrPsm8Ptxa2zeDGtTXpLCtr_zNWcBkVrg7UdtXNDzHLfkU-ZXkfR2CHiGdcFA4ctPTcl5JASbdAM3BH4GRUds9rsv2w6RF_O-KdxejnngwadmcLJfrthX9iSWSS54s46ufXNw80o41BAVZ0CPxdT_FvQiE5-Vi7erTxVCylzyKPQU"/>
+</div>
+<!-- Content Body -->
+<div class="p-space-6 flex flex-col flex-grow">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-2 group-hover:text-primary transition-colors">
+              WhatsApp Campaign Hub
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-6 flex-grow leading-relaxed">
+              Dashboard to manage WhatsApp marketing campaigns, contacts, reports, scheduling and CSV/Excel contact import.
+            </p>
+<!-- Tech Badges -->
+<div class="flex flex-wrap gap-1.5 mb-space-6">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface border border-secondary-container text-secondary">Laravel 10+</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface border border-secondary-container text-secondary">PHP 8+</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface border border-secondary-container text-secondary">React</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface border border-secondary-container text-secondary">Inertia.js</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface border border-secondary-container text-secondary">Tailwind CSS</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface border border-secondary-container text-secondary">Lucide</span>
+</div>
+<!-- Card Footer CTA -->
+<div class="pt-space-4 border-t border-secondary-container/40">
+<a class="inline-flex items-center justify-between w-full font-label-sm text-label-sm text-primary hover:text-primary-fixed-dim transition-colors group/link" href="https://github.com/AngeArsene/WhatsApp_Campaign_Hub" rel="noopener noreferrer" target="_blank">
+<span class="font-semibold flex items-center gap-1.5">
+<span class="font-mono text-on-surface-variant">&gt;</span> View source
+                </span>
+<span class="material-symbols-outlined text-[16px] group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Project Card 2: WooCommerce Smobilpay Gateway -->
+<div class="flex flex-col bg-surface-container rounded-xl border border-secondary-container hover:border-outline transition-colors overflow-hidden group">
+<!-- Card Header Terminal Bar -->
+<div class="flex items-center justify-between px-space-4 py-2 bg-secondary-container/40 border-b border-secondary-container">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-error/70"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-primary/70"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim/70"></span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">Package</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface border border-secondary-container text-primary font-mono font-semibold">SOURCE</span>
+</div>
+<!-- Thumbnail Image -->
+<div class="relative w-full aspect-[16/9] bg-surface-container-highest overflow-hidden border-b border-secondary-container">
+<img alt="Smobilpay S3P Gateway Thumbnail" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida/AEtjO1XTaawlTziGg2cvEdE9TvdoBKP58buWZHumME_ADEpmKdKSZpvVOL2kU9NAtm6osslIRx3Cs56NkqipKJPfjd2iX7aLWHwWrFAhXAPyPaF0YCtEgutfYKrsfBLfPlWylVegEYKDl7KNGSoFh-f7nsKkCIrYOf9BIb_O6i19vpbecwLmxhVWtYDIicW5WsWlJKV4BxlRIk4gUjsG0Z-P_v6qm0_1Ccil_DxWPiDfuTg34gbxv6Y3weM1OA8"/>
+</div>
+<!-- Content Body -->
+<div class="p-space-6 flex flex-col flex-grow">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-2 group-hover:text-primary transition-colors">
+              WooCommerce Smobilpay Gateway
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-6 flex-grow leading-relaxed">
+              WooCommerce gateway accepting MTN MoMo and Orange Money through Smobilpay S3P, with automatic webhooks, email/WhatsApp notifications and bilingual EN/FR errors.
+            </p>
+<!-- Tech Badges -->
+<div class="flex flex-wrap gap-1.5 mb-space-6">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface border border-secondary-container text-secondary">WordPress</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface border border-secondary-container text-secondary">WooCommerce</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface border border-secondary-container text-secondary">PHP</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface border border-secondary-container text-secondary">Smobilpay S3P API</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface border border-secondary-container text-secondary">MTN MoMo</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface border border-secondary-container text-secondary">Orange Money</span>
+</div>
+<!-- Card Footer CTA -->
+<div class="pt-space-4 border-t border-secondary-container/40">
+<a class="inline-flex items-center justify-between w-full font-label-sm text-label-sm text-primary hover:text-primary-fixed-dim transition-colors group/link" href="https://github.com/AngeArsene/wc-smobilpay" rel="noopener noreferrer" target="_blank">
+<span class="font-semibold flex items-center gap-1.5">
+<span class="font-mono text-on-surface-variant">&gt;</span> View source
+                </span>
+<span class="material-symbols-outlined text-[16px] group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Project Card 3: Chirper Microblog -->
+<div class="flex flex-col bg-surface-container rounded-xl border border-secondary-container hover:border-outline transition-colors overflow-hidden group">
+<!-- Card Header Terminal Bar -->
+<div class="flex items-center justify-between px-space-4 py-2 bg-secondary-container/40 border-b border-secondary-container">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-error/70"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-primary/70"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim/70"></span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">FullStackApp</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface border border-secondary-container text-primary font-mono font-semibold">SOURCE</span>
+</div>
+<!-- Thumbnail Image -->
+<div class="relative w-full aspect-[16/9] bg-surface-container-highest overflow-hidden border-b border-secondary-container">
+<img alt="Chirper Architecture Thumbnail" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida/AEtjO1XAtkrQiqFdtsf5ua0z2R8_3CXtrUdmTaiEGh-6kX1JAZv-re22wc4hAsMWT796FcQL1F_jFh-nfPiWDSN9-djqjuGWrFJ8Npr1Ioxm2QwAgpSTnShH7MCodPQs114VbFIVxgbCjlSeL9VKShz6fSp5Fo5I-oRifsZ8WyXmh8XllUiOFORex8ZEwzALW223DPtJKER6bfn6PMm2ih4jT8SMj9k9P0sgz7WvCDKVb5KZGm3QhxKvca8zvik"/>
+</div>
+<!-- Content Body -->
+<div class="p-space-6 flex flex-col flex-grow">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-2 group-hover:text-primary transition-colors">
+              Chirper Microblog
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-6 flex-grow leading-relaxed">
+              Laravel 13 microblogging application with a paginated social feed, authentication, profile management, policies and protected ownership actions.
+            </p>
+<!-- Tech Badges -->
+<div class="flex flex-wrap gap-1.5 mb-space-6">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface border border-secondary-container text-secondary">Laravel 13</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface border border-secondary-container text-secondary">Blade</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface border border-secondary-container text-secondary">Tailwind CSS v4</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface border border-secondary-container text-secondary">SQLite</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface border border-secondary-container text-secondary">PHP</span>
+</div>
+<!-- Card Footer CTA -->
+<div class="pt-space-4 border-t border-secondary-container/40">
+<a class="inline-flex items-center justify-between w-full font-label-sm text-label-sm text-primary hover:text-primary-fixed-dim transition-colors group/link" href="https://github.com/AngeArsene/chirper" rel="noopener noreferrer" target="_blank">
+<span class="font-semibold flex items-center gap-1.5">
+<span class="font-mono text-on-surface-variant">&gt;</span> View source
+                </span>
+<span class="material-symbols-outlined text-[16px] group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Overview (Compact grouped grid cards) -->
+<section class="w-full py-space-16 bg-surface-container-low border-t border-secondary-container/60">
+<div class="max-w-[1080px] mx-auto px-gutter-mobile lg:px-gutter-desktop">
+<div class="mb-space-8">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">// CORE COMPETENCIES</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Technical Matrix</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-4">
+<!-- Group 1: Backend -->
+<div class="bg-surface rounded-xl border border-secondary-container p-space-6 flex flex-col">
+<div class="flex items-center gap-2 mb-space-4 text-primary">
+<span class="material-symbols-outlined text-[20px]">dns</span>
+<span class="font-headline-sm text-headline-sm font-semibold">Backend</span>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container border border-secondary-container text-secondary">PHP 8+</span>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container border border-secondary-container text-secondary">Laravel 11+</span>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container border border-secondary-container text-secondary">MySQL</span>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container border border-secondary-container text-secondary">PostgreSQL</span>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container border border-secondary-container text-secondary">SQLite</span>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container border border-secondary-container text-secondary">Queue Workers</span>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container border border-secondary-container text-secondary">REST APIs</span>
+</div>
+</div>
+<!-- Group 2: Frontend -->
+<div class="bg-surface rounded-xl border border-secondary-container p-space-6 flex flex-col">
+<div class="flex items-center gap-2 mb-space-4 text-primary">
+<span class="material-symbols-outlined text-[20px]">devices</span>
+<span class="font-headline-sm text-headline-sm font-semibold">Frontend</span>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container border border-secondary-container text-secondary">React</span>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container border border-secondary-container text-secondary">Inertia.js</span>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container border border-secondary-container text-secondary">Blade Templates</span>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container border border-secondary-container text-secondary">Tailwind CSS</span>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container border border-secondary-container text-secondary">TypeScript</span>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container border border-secondary-container text-secondary">Vite</span>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container border border-secondary-container text-secondary">Alpine.js</span>
+</div>
+</div>
+<!-- Group 3: WordPress / CMS -->
+<div class="bg-surface rounded-xl border border-secondary-container p-space-6 flex flex-col">
+<div class="flex items-center gap-2 mb-space-4 text-primary">
+<span class="material-symbols-outlined text-[20px]">view_quilt</span>
+<span class="font-headline-sm text-headline-sm font-semibold">WordPress / CMS</span>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container border border-secondary-container text-secondary">Custom Themes</span>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container border border-secondary-container text-secondary">WooCommerce</span>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container border border-secondary-container text-secondary">Elementor Pro</span>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container border border-secondary-container text-secondary">WP Bakery</span>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container border border-secondary-container text-secondary">Performance Opt</span>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container border border-secondary-container text-secondary">Security Hardening</span>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container border border-secondary-container text-secondary">Technical SEO</span>
+</div>
+</div>
+<!-- Group 4: APIs & Integrations -->
+<div class="bg-surface rounded-xl border border-secondary-container p-space-6 flex flex-col">
+<div class="flex items-center gap-2 mb-space-4 text-primary">
+<span class="material-symbols-outlined text-[20px]">hub</span>
+<span class="font-headline-sm text-headline-sm font-semibold">APIs &amp; Integrations</span>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container border border-secondary-container text-secondary">Smobilpay S3P</span>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container border border-secondary-container text-secondary">MTN MoMo API</span>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container border border-secondary-container text-secondary">Orange Money API</span>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container border border-secondary-container text-secondary">WhatsApp Cloud API</span>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container border border-secondary-container text-secondary">Webhook Ingestion</span>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-surface-container border border-secondary-container text-secondary">Payment Callbacks</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Closing CTA Band -->
+<section class="w-full py-space-16 lg:py-space-24 bg-surface border-t border-secondary-container" id="contact-band">
+<div class="max-w-[1080px] mx-auto px-gutter-mobile lg:px-gutter-desktop">
+<div class="relative bg-surface-container rounded-xl border border-secondary-container p-space-8 lg:p-space-12 overflow-hidden">
+<!-- Schematic Accent Lines -->
+<div class="absolute top-0 right-0 w-48 h-48 pointer-events-none opacity-20">
+<svg class="w-full h-full stroke-primary" fill="none" viewbox="0 0 100 100">
+<circle cx="100" cy="0" r="40" stroke-width="0.5"></circle>
+<circle cx="100" cy="0" r="70" stroke-width="0.5"></circle>
+<circle cx="100" cy="0" r="95" stroke-width="0.5"></circle>
+<line stroke-dasharray="2,2" stroke-width="0.5" x1="0" x2="100" y1="0" y2="100"></line>
+</svg>
+</div>
+<div class="max-w-2xl relative z-10">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">// INITIALIZE COLLABORATION</span>
+<h2 class="font-headline-lg text-headline-lg lg:text-display text-on-surface font-semibold tracking-tight mt-2 mb-space-4">
+            Have an upcoming project or need dependable <span class="text-primary-container">full-stack integration</span>?
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-8 leading-relaxed">
+            Whether architecting custom Laravel micro-services, implementing local Central African payment gateways, or scaling enterprise WordPress infrastructure, let's connect and review the specifications.
+          </p>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-4">
+<a class="inline-flex items-center justify-center gap-2 h-[42px] px-space-6 rounded-xl bg-primary-container text-surface font-label-md text-label-md font-semibold hover:bg-primary-fixed-dim transition-colors" href="mailto:contact@angearsene.dev">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>Start a Conversation</span>
+</a>
+<div class="flex items-center gap-space-4 px-space-4 py-2 rounded bg-surface border border-secondary-container">
+<span class="material-symbols-outlined text-[18px] text-primary">phone_iphone</span>
+<a class="font-label-md text-label-md text-on-surface hover:text-primary transition-colors" href="tel:+237699512438">
+                +237 699 512 438
+              </a>
+<span class="text-secondary-container">|</span>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="mailto:contact@angearsene.dev">
+                contact@angearsene.dev
+              </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div></main><div class="fixed bottom-6 right-6 z-40 flex flex-col gap-2.5"><a class="flex items-center gap-2 px-3 py-2 rounded-xl bg-surface-container border border-outline-variant text-on-surface hover:border-primary-container hover:text-primary transition-all shadow-lg backdrop-blur-md group" href="https://wa.me/237699512438" rel="noopener noreferrer" target="_blank"><span class="w-2.5 h-2.5 rounded-full bg-primary-container group-hover:scale-110 transition-transform"></span><span class="font-label-sm text-label-sm font-semibold tracking-wide">WhatsApp</span><span class="material-symbols-outlined text-[16px] text-primary">chat</span></a><a class="flex items-center gap-2 px-3 py-2 rounded-xl bg-surface-container border border-outline-variant text-on-surface hover:border-primary-container hover:text-primary transition-all shadow-lg backdrop-blur-md group" href="tel:+237699512438"><span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:text-primary transition-colors">call</span><span class="font-label-sm text-label-sm text-on-surface-variant group-hover:text-on-surface transition-colors">+237 699 512 438</span></a></div><footer class="w-full bg-surface-container-lowest border-t border-outline-variant/40 pt-space-12 pb-space-24"><div class="max-w-max-width mx-auto px-gutter-mobile lg:px-gutter-desktop"><div class="grid grid-cols-1 md:grid-cols-4 gap-space-8 pb-space-8 border-b border-outline-variant/30"><div class="md:col-span-2 flex flex-col gap-space-3"><div class="flex items-center gap-space-2"><span class="font-headline-sm text-headline-sm text-primary">NKEN MANDENG ANGE ARSENE</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">Software Engineer specializing in structural systems engineering, scalable backend architecture, and reactive frontend micro-architectures. Operating in Douala, Cameroon.</p><div class="flex items-center gap-space-2 font-label-sm text-label-sm text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-primary">location_on</span><span>Douala, Cameroon (GMT+1)</span></div></div><div class="flex flex-col gap-space-2"><span class="font-label-md text-label-md text-primary uppercase tracking-wider">Navigation</span><nav class="flex flex-col gap-space-1"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="home" href="#">Home</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="about" href="#">About</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="experience" href="#">Experience</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="projects" href="#">Projects</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="contact" href="#">Contact</a></nav></div><div class="flex flex-col gap-space-2"><span class="font-label-md text-label-md text-primary uppercase tracking-wider">Connect</span><div class="flex flex-col gap-space-1"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2" href="https://github.com/AngeArsene" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">terminal</span><span>GitHub</span></a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2" href="https://www.linkedin.com" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">link</span><span>LinkedIn</span></a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2" href="mailto:contact@angearsene.dev"><span class="material-symbols-outlined text-[16px]">mail</span><span>Email Dispatch</span></a></div></div></div><div class="pt-space-6 flex flex-col sm:flex-row items-center justify-between gap-space-4 font-label-sm text-label-sm text-on-surface-variant"><p>© 2026 Nken Mandeng Ange Arsene. All rights reserved.</p><p class="text-[11px] text-outline">Crafted with Blueprint Architecture Design System. Icons via Google Symbols.</p></div></div></footer></body></html>

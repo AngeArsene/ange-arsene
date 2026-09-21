@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'tertiary-fixed-dim': '#95ccff', 'error': '#ffb4ab', 'on-secondary-container': '#9db7da', 'primary': '#8cebff', 'on-secondary-fixed-variant': '#2e4866', 'primary-fixed-dim': '#65d6ec', 'inverse-surface': '#d5e3fb', 'on-secondary': '#16324e', 'on-surface': '#d5e3fb', 'surface': '#051425', 'surface-container-low': '#0e1c2d', 'secondary-fixed-dim': '#aec9ec', 'surface-tint': '#65d6ec', 'on-secondary-fixed': '#001d36', 'on-tertiary': '#003352', 'on-primary': '#00363e', 'secondary-fixed': '#d1e4ff', 'surface-container-highest': '#283648', 'background': '#051425', 'primary-fixed': '#a3eeff', 'tertiary-container': '#8dc6fb', 'surface-dim': '#051425', 'surface-variant': '#283648', 'outline-variant': '#3d494b', 'error-container': '#93000a', 'on-surface-variant': '#bcc9cc', 'surface-container-high': '#1d2b3d', 'on-background': '#d5e3fb', 'surface-container-lowest': '#010f1f', 'on-primary-fixed-variant': '#004e5a', 'on-tertiary-fixed-variant': '#004a75', 'on-error-container': '#ffdad6', 'on-tertiary-fixed': '#001d32', 'primary-container': '#5fd0e6', 'tertiary-fixed': '#cde5ff', 'on-primary-container': '#005764', 'outline': '#879396', 'on-tertiary-container': '#025381', 'secondary-container': '#2e4866', 'surface-bright': '#2c3a4c', 'on-primary-fixed': '#001f25', 'inverse-primary': '#006877', 'secondary': '#aec9ec', 'tertiary': '#c2e0ff', 'on-error': '#690005', 'surface-container': '#122032', 'inverse-on-surface': '#233143' }, borderRadius: { 'DEFAULT': '0.125rem', 'lg': '0.25rem', 'xl': '0.5rem', 'full': '0.75rem' }, spacing: { 'grid-unit': '4px', 'space-2': '0.5rem', 'space-3': '0.75rem', 'space-24': '6rem', 'gutter-mobile': '1rem', 'space-12': '3rem', 'space-16': '4rem', 'space-6': '1.5rem', 'space-4': '1rem', 'max-width': '1200px', 'space-8': '2rem', 'space-1': '0.25rem', 'gutter-desktop': '2rem' }, fontFamily: { 'headline-lg-mobile': ['JetBrains Mono'], 'body-sm': ['Fira Sans'], 'body-lg': ['Fira Sans'], 'label-sm': ['JetBrains Mono'], 'headline-lg': ['JetBrains Mono'], 'display-mobile': ['JetBrains Mono'], 'headline-md': ['JetBrains Mono'], 'label-md': ['JetBrains Mono'], 'display': ['JetBrains Mono'], 'headline-sm': ['JetBrains Mono'], 'code-snippet': ['JetBrains Mono'], 'body-md': ['Fira Sans'] }, fontSize: { 'headline-lg-mobile': ['1.75rem', { lineHeight: '1.3', letterSpacing: '-0.01em', fontWeight: '600' }], 'body-sm': ['0.875rem', { lineHeight: '1.5', letterSpacing: '0.01em', fontWeight: '400' }], 'body-lg': ['1.125rem', { lineHeight: '1.6', letterSpacing: '0.01em', fontWeight: '400' }], 'label-sm': ['0.6875rem', { lineHeight: '1.2', letterSpacing: '0.06em', fontWeight: '500' }], 'headline-lg': ['2.25rem', { lineHeight: '1.25', letterSpacing: '-0.02em', fontWeight: '600' }], 'display-mobile': ['2.25rem', { lineHeight: '1.2', letterSpacing: '-0.02em', fontWeight: '700' }], 'headline-md': ['1.5rem', { lineHeight: '1.35', letterSpacing: '-0.01em', fontWeight: '600' }], 'label-md': ['0.8125rem', { lineHeight: '1.2', letterSpacing: '0.04em', fontWeight: '500' }], 'display': ['3.25rem', { lineHeight: '1.15', letterSpacing: '-0.03em', fontWeight: '700' }], 'headline-sm': ['1.125rem', { lineHeight: '1.4', letterSpacing: '0em', fontWeight: '600' }], 'code-snippet': ['0.875rem', { lineHeight: '1.6', letterSpacing: '0em', fontWeight: '400' }], 'body-md': ['1rem', { lineHeight: '1.55', letterSpacing: '0em', fontWeight: '400' }] } } } };</script></head><body class="bg-background font-body-md text-on-background min-h-screen relative antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-md border-b border-outline-variant/40"><div class="h-16 max-w-max-width mx-auto px-gutter-mobile lg:px-gutter-desktop flex items-center justify-between gap-space-4"><div class="flex items-center gap-space-3"><img alt="Ange Arsene Engineering Monogram" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XqpxNOBl8k5gjuvBZy3dhIf9R9QBctghiuL8iXutmQhowC_n2fO-pCVZzjx-RgtVyWxJpygv7TUQJozkUXJdnvsLXuvKVfnCtxJMsvxDXKGXRn1C9xjD3aQFFEy7CZMtXfV-UdZZfnB4uHCy4TcAeAU-WtuMkIWYIRZ6WSrwzxkLjaNLu8N4PlSQPqoxmzGf6IJ1lVVmolmo2n3VgpdS9OMY5cfljZzfJl1GFZGBoasaO8Cwn9NnFc_n4"/><div class="flex flex-col"><div class="flex items-center gap-space-2"><span class="font-label-md text-label-md text-primary font-semibold tracking-wider">ANGE ARSENE // DEV</span></div><div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant">Available for projects</span></div></div></div><nav class="hidden lg:flex items-center gap-space-6" data-active-classes="text-primary border-b-2 border-primary"><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-space-1" data-path="home" href="#">Home</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-space-1" data-path="about" href="#">About</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-space-1" data-path="experience" href="#">Experience</a><a aria-current="page" class="font-label-md transition-colors py-space-1 text-primary border-b-2 border-primary" data-path="projects" href="#">Projects</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-space-1" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-3"><div class="flex items-center p-0.5 rounded bg-surface-container border border-outline-variant/60 font-label-sm text-label-sm"><button class="px-2 py-0.5 rounded bg-secondary-container text-primary font-semibold" type="button">EN</button><button class="px-2 py-0.5 rounded text-on-surface-variant hover:text-on-surface transition-colors" type="button">FR</button></div><a class="p-1.5 rounded border border-outline-variant/60 bg-surface-container text-on-surface-variant hover:text-primary hover:border-primary-container transition-all flex items-center justify-center" href="https://github.com/AngeArsene" rel="noopener noreferrer" target="_blank" title="GitHub Profile"><span class="material-symbols-outlined text-[18px]">code</span></a><div class="relative group"><button class="flex items-center gap-1 px-2.5 py-1 rounded border border-outline-variant/60 bg-surface-container text-on-surface hover:text-primary hover:border-primary-container font-label-sm text-label-sm transition-all" type="button"><span class="material-symbols-outlined text-[16px]">description</span><span>CV</span><span class="material-symbols-outlined text-[14px]">expand_more</span></button><div class="absolute right-0 mt-1 w-44 py-1 rounded bg-surface-container-high border border-outline-variant/80 hidden group-hover:block z-50 shadow-xl"><a class="flex items-center gap-2 px-3 py-1.5 font-label-sm text-label-sm text-on-surface hover:bg-secondary-container hover:text-primary transition-colors" href="/downloads/Ange_Arsene_Resume.pdf"><span class="material-symbols-outlined text-[14px]">download</span><span>Resume (EN)</span></a><a class="flex items-center gap-2 px-3 py-1.5 font-label-sm text-label-sm text-on-surface hover:bg-secondary-container hover:text-primary transition-colors" href="/downloads/Ange_Arsene_Resume_FR.pdf"><span class="material-symbols-outlined text-[14px]">download</span><span>CV (FR)</span></a></div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Interactive Background Schematic Coordinate Canvas -->
+<div class="relative w-full overflow-hidden bg-surface py-space-12 lg:py-space-16">
+<!-- SVG Blueprint Grid Accent Background -->
+<div class="absolute inset-0 pointer-events-none opacity-40">
+<svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="24" id="projects-blueprint-grid" patternunits="userSpaceOnUse" width="24">
+<path d="M 24 0 L 0 0 0 24" fill="none" stroke="rgba(70, 129, 178, 0.12)" stroke-width="1"></path>
+</pattern>
+<pattern height="120" id="projects-blueprint-major" patternunits="userSpaceOnUse" width="120">
+<rect fill="none" height="120" width="120"></rect>
+<path d="M 120 0 L 0 0 0 120" fill="none" stroke="rgba(95, 208, 230, 0.15)" stroke-width="1.2"></path>
+</pattern>
+</defs>
+<rect fill="url(#projects-blueprint-grid)" height="100%" width="100%"></rect>
+<rect fill="url(#projects-blueprint-major)" height="100%" width="100%"></rect>
+</svg>
+</div>
+<!-- Main Container constrained to max 1080px -->
+<div class="relative z-10 max-w-[1080px] mx-auto px-gutter-mobile lg:px-gutter-desktop flex flex-col">
+<!-- Top Monospace Coordinate Header & Badging -->
+<div class="flex items-center justify-between gap-space-4 pb-space-6">
+<div class="flex items-center gap-space-2 font-label-sm text-label-sm text-primary">
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span>SYS::INDEX_v2.6 // REGISTRY_BROWSER</span>
+</div>
+<div class="hidden sm:flex items-center gap-space-3 font-code-snippet text-code-snippet text-on-surface-variant">
+<span class="text-outline">LOC:</span>
+<span>DOUALA_CM_04.05N</span>
+<span class="text-outline">|</span>
+<span class="text-primary-container">STATUS: 16 VERIFIED ENTRIES</span>
+</div>
+</div>
+<!-- Headline Section -->
+<div class="flex flex-col gap-space-3 pb-space-8">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+          Projects &amp; Implementations
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+          Engineered web applications, packages, and <span class="text-primary-container font-medium">client digital platforms</span>.
+        </p>
+</div>
+<!-- Interactive Filter Bar (Blueprint tabs with cyan indicator) -->
+<div class="w-full pb-space-8">
+<div class="flex flex-wrap items-center gap-1.5 sm:gap-space-2 p-1.5 rounded-xl bg-surface-container-low shadow-sm">
+<button class="filter-btn active flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg font-label-md text-label-md transition-colors bg-secondary-container text-primary font-semibold" onclick="filterCatalog('all', this)" type="button">
+<span>All Projects</span>
+<span class="text-[11px] px-1.5 py-0.5 rounded bg-surface font-mono text-on-secondary-container">16</span>
+</button>
+<button class="filter-btn flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg font-label-md text-label-md transition-colors text-on-surface-variant hover:text-primary" onclick="filterCatalog('fullstack', this)" type="button">
+<span>Full-Stack Apps</span>
+<span class="text-[11px] px-1.5 py-0.5 rounded bg-surface-container font-mono text-outline">3</span>
+</button>
+<button class="filter-btn flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg font-label-md text-label-md transition-colors text-on-surface-variant hover:text-primary" onclick="filterCatalog('packages', this)" type="button">
+<span>PHP Packages</span>
+<span class="text-[11px] px-1.5 py-0.5 rounded bg-surface-container font-mono text-outline">3</span>
+</button>
+<button class="filter-btn flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg font-label-md text-label-md transition-colors text-on-surface-variant hover:text-primary" onclick="filterCatalog('websites', this)" type="button">
+<span>Client Websites</span>
+<span class="text-[11px] px-1.5 py-0.5 rounded bg-surface-container font-mono text-outline">10</span>
+</button>
+</div>
+</div>
+<!-- SECTION 1: Full-Stack Applications & Packages (Technical Focus) -->
+<div class="flex flex-col gap-space-6 pb-space-16 catalog-section" id="section-technical">
+<div class="flex items-center justify-between pb-space-2">
+<div class="flex items-center gap-space-3">
+<span class="material-symbols-outlined text-primary text-[22px]">developer_board</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">
+              Core Systems &amp; Engineered Architecture
+            </h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline hidden md:inline-block">TIER_01 // HIGH CONCURRENCY &amp; API SPEC</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-6">
+<!-- Card 1: WhatsApp Campaign Hub -->
+<div class="project-card technical fullstack group flex flex-col justify-between rounded-xl bg-surface-container-low hover:bg-surface-container transition-all overflow-hidden">
+<div class="w-full flex flex-col">
+<!-- Top bar -->
+<div class="flex items-center justify-between px-space-4 py-space-2 bg-surface-container">
+<div class="flex items-center gap-space-2">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-primary font-mono uppercase tracking-wider">SOURCE REPO</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">v1.4.0</span>
+</div>
+<!-- Image Banner with exact placeholder -->
+<div class="relative w-full aspect-[1.76] bg-surface-container-highest overflow-hidden">
+<img alt="Technical dashboard graphic for WhatsApp Campaign Hub with analytics and queues" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida/AEtjO1VS1TQcXZ-feh6LriWqN_vFt5Gx1PmpaaQStjixcTj7Su-mCS-H7SHJuSvkKr1AHIi80wXCOsZ4GFmrPsm8Ptxa2zeDGtTXpLCtr_zNWcBkVrg7UdtXNDzHLfkU-ZXkfR2CHiGdcFA4ctPTcl5JASbdAM3BH4GRUds9rsv2w6RF_O-KdxejnngwadmcLJfrthX9iSWSS54s46ufXNw80o41BAVZ0CPxdT_FvQiE5-Vi7erTxVCylzyKPQU"/>
+</div>
+<!-- Content -->
+<div class="p-space-6 flex flex-col gap-space-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  WhatsApp Campaign Hub
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Dashboard to manage WhatsApp marketing campaigns, contacts, reports, scheduling, and CSV/Excel contact import with queued job dispatching.
+                </p>
+<div class="flex flex-wrap gap-1.5 pt-space-2">
+<span class="px-2 py-0.5 rounded bg-secondary-container/40 text-primary-fixed-dim font-label-sm text-label-sm font-mono">Laravel 10+</span>
+<span class="px-2 py-0.5 rounded bg-secondary-container/40 text-primary-fixed-dim font-label-sm text-label-sm font-mono">React</span>
+<span class="px-2 py-0.5 rounded bg-secondary-container/40 text-primary-fixed-dim font-label-sm text-label-sm font-mono">Inertia.js</span>
+<span class="px-2 py-0.5 rounded bg-secondary-container/40 text-primary-fixed-dim font-label-sm text-label-sm font-mono">Tailwind CSS</span>
+</div>
+</div>
+</div>
+<!-- Action CTA -->
+<div class="px-space-6 pb-space-6 pt-space-2">
+<a class="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-lg bg-secondary-container text-on-surface hover:text-primary hover:bg-surface-bright transition-all font-label-md text-label-md font-semibold" href="https://github.com/AngeArsene" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>View source</span>
+<span class="material-symbols-outlined text-[16px] text-primary">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 2: WooCommerce Smobilpay Gateway -->
+<div class="project-card technical packages group flex flex-col justify-between rounded-xl bg-surface-container-low hover:bg-surface-container transition-all overflow-hidden">
+<div class="w-full flex flex-col">
+<!-- Top bar -->
+<div class="flex items-center justify-between px-space-4 py-space-2 bg-surface-container">
+<div class="flex items-center gap-space-2">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-primary font-mono uppercase tracking-wider">SOURCE REPO</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">S3P_PLUGIN</span>
+</div>
+<!-- Image Banner with exact placeholder -->
+<div class="relative w-full aspect-[1.76] bg-surface-container-highest overflow-hidden">
+<img alt="Technical architecture diagram for WooCommerce Smobilpay Gateway with MTN and Orange Money" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida/AEtjO1XTaawlTziGg2cvEdE9TvdoBKP58buWZHumME_ADEpmKdKSZpvVOL2kU9NAtm6osslIRx3Cs56NkqipKJPfjd2iX7aLWHwWrFAhXAPyPaF0YCtEgutfYKrsfBLfPlWylVegEYKDl7KNGSoFh-f7nsKkCIrYOf9BIb_O6i19vpbecwLmxhVWtYDIicW5WsWlJKV4BxlRIk4gUjsG0Z-P_v6qm0_1Ccil_DxWPiDfuTg34gbxv6Y3weM1OA8"/>
+</div>
+<!-- Content -->
+<div class="p-space-6 flex flex-col gap-space-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  WooCommerce Smobilpay Gateway
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  WooCommerce payment gateway accepting MTN MoMo and Orange Money through Smobilpay S3P protocol, automatic webhook verification and instant push notifications.
+                </p>
+<div class="flex flex-wrap gap-1.5 pt-space-2">
+<span class="px-2 py-0.5 rounded bg-secondary-container/40 text-primary-fixed-dim font-label-sm text-label-sm font-mono">WordPress</span>
+<span class="px-2 py-0.5 rounded bg-secondary-container/40 text-primary-fixed-dim font-label-sm text-label-sm font-mono">WooCommerce</span>
+<span class="px-2 py-0.5 rounded bg-secondary-container/40 text-primary-fixed-dim font-label-sm text-label-sm font-mono">Smobilpay S3P API</span>
+<span class="px-2 py-0.5 rounded bg-secondary-container/40 text-primary-fixed-dim font-label-sm text-label-sm font-mono">MTN MoMo</span>
+</div>
+</div>
+</div>
+<!-- Action CTA -->
+<div class="px-space-6 pb-space-6 pt-space-2">
+<a class="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-lg bg-secondary-container text-on-surface hover:text-primary hover:bg-surface-bright transition-all font-label-md text-label-md font-semibold" href="https://github.com/AngeArsene" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">code</span>
+<span>View source</span>
+<span class="material-symbols-outlined text-[16px] text-primary">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 3: Chirper (Laravel 13) -->
+<div class="project-card technical fullstack group flex flex-col justify-between rounded-xl bg-surface-container-low hover:bg-surface-container transition-all overflow-hidden">
+<div class="w-full flex flex-col">
+<div class="flex items-center justify-between px-space-4 py-space-2 bg-surface-container">
+<div class="flex items-center gap-space-2">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-primary font-mono uppercase tracking-wider">SOURCE REPO</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">L13_EDGE</span>
+</div>
+<div class="relative w-full aspect-[1.76] bg-surface-container-highest overflow-hidden">
+<img alt="Technical code editor thumbnail for Chirper Laravel 13 microblogging app" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida/AEtjO1XAtkrQiqFdtsf5ua0z2R8_3CXtrUdmTaiEGh-6kX1JAZv-re22wc4hAsMWT796FcQL1F_jFh-nfPiWDSN9-djqjuGWrFJ8Npr1Ioxm2QwAgpSTnShH7MCodPQs114VbFIVxgbCjlSeL9VKShz6fSp5Fo5I-oRifsZ8WyXmh8XllUiOFORex8ZEwzALW223DPtJKER6bfn6PMm2ih4jT8SMj9k9P0sgz7WvCDKVb5KZGm3QhxKvca8zvik"/>
+</div>
+<div class="p-space-6 flex flex-col gap-space-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  Chirper
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Laravel 13 microblogging application featuring SQLite verified storage, declarative gate authorization, user authentication, and reactive timeline policies.
+                </p>
+<div class="flex flex-wrap gap-1.5 pt-space-2">
+<span class="px-2 py-0.5 rounded bg-secondary-container/40 text-primary-fixed-dim font-label-sm text-label-sm font-mono">Laravel 13</span>
+<span class="px-2 py-0.5 rounded bg-secondary-container/40 text-primary-fixed-dim font-label-sm text-label-sm font-mono">Blade</span>
+<span class="px-2 py-0.5 rounded bg-secondary-container/40 text-primary-fixed-dim font-label-sm text-label-sm font-mono">Tailwind CSS v4</span>
+<span class="px-2 py-0.5 rounded bg-secondary-container/40 text-primary-fixed-dim font-label-sm text-label-sm font-mono">SQLite</span>
+</div>
+</div>
+</div>
+<div class="px-space-6 pb-space-6 pt-space-2">
+<a class="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-lg bg-secondary-container text-on-surface hover:text-primary hover:bg-surface-bright transition-all font-label-md text-label-md font-semibold" href="https://github.com/AngeArsene" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>View source</span>
+<span class="material-symbols-outlined text-[16px] text-primary">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 4: WooWA Webhooks -->
+<div class="project-card technical packages group flex flex-col justify-between rounded-xl bg-surface-container-low hover:bg-surface-container transition-all p-space-6">
+<div class="flex flex-col gap-space-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm text-primary font-mono uppercase">SOURCE REPO</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline font-mono">INTEGRATION</span>
+</div>
+<div class="flex flex-col gap-space-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  WooWA Webhooks
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  WooCommerce engine integration for instant, real-time WhatsApp order alerts, delivery status tracking, and automated abandoned-cart recovery triggers.
+                </p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-space-2">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-mono">WordPress</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-mono">WooCommerce</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-mono">WhatsApp API</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-mono">Webhooks</span>
+</div>
+</div>
+<div class="pt-space-6">
+<a class="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-lg bg-secondary-container text-on-surface hover:text-primary hover:bg-surface-bright transition-all font-label-md text-label-md font-semibold" href="https://github.com/AngeArsene/woowa-webhooks" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">webhook</span>
+<span>View source</span>
+<span class="material-symbols-outlined text-[16px] text-primary">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- Card 5: TaskFlow -->
+<div class="project-card technical fullstack group flex flex-col justify-between rounded-xl bg-surface-container-low hover:bg-surface-container transition-all p-space-6">
+<div class="flex flex-col gap-space-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm text-primary font-mono uppercase">SOURCE REPO</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline font-mono">SPA_REACT</span>
+</div>
+<div class="flex flex-col gap-space-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  TaskFlow
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  High-velocity task management application featuring multi-tenant workspace isolation, priority lane sorting, and reactive drag-and-drop kanban boards.
+                </p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-space-2">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-mono">Laravel</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-mono">Inertia.js</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-mono">React</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-mono">TypeScript</span>
+</div>
+</div>
+<div class="pt-space-6">
+<a class="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-lg bg-secondary-container text-on-surface hover:text-primary hover:bg-surface-bright transition-all font-label-md text-label-md font-semibold" href="https://github.com/AngeArsene/TaskFlow" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">view_kanban</span>
+<span>View source</span>
+<span class="material-symbols-outlined text-[16px] text-primary">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- Card 6: Custom PHP MVC Framework -->
+<div class="project-card technical packages group flex flex-col justify-between rounded-xl bg-surface-container-low hover:bg-surface-container transition-all p-space-6">
+<div class="flex flex-col gap-space-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm text-primary font-mono uppercase">SOURCE REPO</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline font-mono">CORE_ENGINE</span>
+</div>
+<div class="flex flex-col gap-space-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  Custom PHP MVC Framework
+                </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Lightweight extensible PHP MVC foundation featuring fast deterministic regex routing, dependency injection container, and modular plugin lifecycle mechanics.
+                </p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-space-2">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-mono">PHP</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-mono">MVC</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-mono">Routing</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-mono">Plugin System</span>
+</div>
+</div>
+<div class="pt-space-6">
+<a class="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-lg bg-secondary-container text-on-surface hover:text-primary hover:bg-surface-bright transition-all font-label-md text-label-md font-semibold" href="https://github.com/AngeArsene/php_mvc_framework" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>View source</span>
+<span class="material-symbols-outlined text-[16px] text-primary">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 2: Client Websites (WordPress & Elementor Production Delivery) -->
+<div class="flex flex-col gap-space-6 pb-space-16 catalog-section" id="section-client">
+<div class="flex items-center justify-between pb-space-2">
+<div class="flex items-center gap-space-3">
+<span class="material-symbols-outlined text-primary text-[22px]">language</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">
+              Client Platforms &amp; Commercial Deployments
+            </h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline hidden md:inline-block">TIER_02 // COMMERCIAL CLIENT PORTFOLIO</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-6">
+<!-- Client Card 1 -->
+<div class="project-card client websites group flex flex-col justify-between rounded-xl bg-surface-container-low hover:bg-surface-container transition-all p-space-6">
+<div class="flex flex-col gap-space-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-[#5FE6A8]"></span>
+<span class="font-label-sm text-label-sm text-[#5FE6A8] font-mono">LIVE PRODUCTION</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline font-mono">FR_INDUSTRY</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                Chaudronnerie Tuyauterie St Laurent
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                French industrial metalwork and high-pressure piping engineering business website, structured for quote dispatches and industrial compliance display.
+              </p>
+<div class="flex flex-wrap gap-1.5 pt-space-2">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-mono">WordPress</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-mono">Elementor</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-mono">Responsive</span>
+</div>
+</div>
+<div class="pt-space-6">
+<a class="inline-flex items-center justify-between w-full py-2.5 px-4 rounded-lg bg-secondary-container text-on-surface hover:text-primary hover:bg-surface-bright transition-all font-label-md text-label-md font-semibold" href="https://chaudronneriestlaurent.gogency.fr/" rel="noopener noreferrer" target="_blank">
+<span>Visit website</span>
+<span class="material-symbols-outlined text-[18px] text-primary">north_east</span>
+</a>
+</div>
+</div>
+<!-- Client Card 2 -->
+<div class="project-card client websites group flex flex-col justify-between rounded-xl bg-surface-container-low hover:bg-surface-container transition-all p-space-6">
+<div class="flex flex-col gap-space-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-[#5FE6A8]"></span>
+<span class="font-label-sm text-label-sm text-[#5FE6A8] font-mono">LIVE PRODUCTION</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline font-mono">FR_CRAFT</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                Le Four à Bois
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                French artisanal wood-fired oven business website built with optimized image pipelines, catalogue showcasing, and regional sales intake.
+              </p>
+<div class="flex flex-wrap gap-1.5 pt-space-2">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-mono">WordPress</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-mono">Elementor</span>
+</div>
+</div>
+<div class="pt-space-6">
+<a class="inline-flex items-center justify-between w-full py-2.5 px-4 rounded-lg bg-secondary-container text-on-surface hover:text-primary hover:bg-surface-bright transition-all font-label-md text-label-md font-semibold" href="https://four-a-bois.gogency.fr/" rel="noopener noreferrer" target="_blank">
+<span>Visit website</span>
+<span class="material-symbols-outlined text-[18px] text-primary">north_east</span>
+</a>
+</div>
+</div>
+<!-- Client Card 3 -->
+<div class="project-card client websites group flex flex-col justify-between rounded-xl bg-surface-container-low hover:bg-surface-container transition-all p-space-6">
+<div class="flex flex-col gap-space-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-[#5FE6A8]"></span>
+<span class="font-label-sm text-label-sm text-[#5FE6A8] font-mono">LIVE PRODUCTION</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline font-mono">FR_EQUESTRIAN</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                Pony Gones
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                French pony and equestrian business website featuring event calendars, course registration structures, and responsive mobile schedules.
+              </p>
+<div class="flex flex-wrap gap-1.5 pt-space-2">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-mono">WordPress</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-mono">Elementor</span>
+</div>
+</div>
+<div class="pt-space-6">
+<a class="inline-flex items-center justify-between w-full py-2.5 px-4 rounded-lg bg-secondary-container text-on-surface hover:text-primary hover:bg-surface-bright transition-all font-label-md text-label-md font-semibold" href="https://www.pony-gones69.fr/" rel="noopener noreferrer" target="_blank">
+<span>Visit website</span>
+<span class="material-symbols-outlined text-[18px] text-primary">north_east</span>
+</a>
+</div>
+</div>
+<!-- Client Card 4 -->
+<div class="project-card client websites group flex flex-col justify-between rounded-xl bg-surface-container-low hover:bg-surface-container transition-all p-space-6">
+<div class="flex flex-col gap-space-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-[#5FE6A8]"></span>
+<span class="font-label-sm text-label-sm text-[#5FE6A8] font-mono">LIVE PRODUCTION</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline font-mono">FR_SERVICES</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                Dynam'Êcens
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Comprehensive corporate and wellbeing solutions digital presence, crafted with custom visual blocks and localized search optimization.
+              </p>
+<div class="flex flex-wrap gap-1.5 pt-space-2">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-mono">WordPress</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-mono">Elementor</span>
+</div>
+</div>
+<div class="pt-space-6">
+<a class="inline-flex items-center justify-between w-full py-2.5 px-4 rounded-lg bg-secondary-container text-on-surface hover:text-primary hover:bg-surface-bright transition-all font-label-md text-label-md font-semibold" href="https://dynamecens-86.gogency.fr/" rel="noopener noreferrer" target="_blank">
+<span>Visit website</span>
+<span class="material-symbols-outlined text-[18px] text-primary">north_east</span>
+</a>
+</div>
+</div>
+<!-- Client Card 5 -->
+<div class="project-card client websites group flex flex-col justify-between rounded-xl bg-surface-container-low hover:bg-surface-container transition-all p-space-6">
+<div class="flex flex-col gap-space-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-[#5FE6A8]"></span>
+<span class="font-label-sm text-label-sm text-[#5FE6A8] font-mono">LIVE PRODUCTION</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline font-mono">FR_HEAVY_CONSTRUCTION</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                Iroise Démolition
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Professional demolition and site deconstruction contractor portal, presenting equipment capacities, environmental certifications, and project bids.
+              </p>
+<div class="flex flex-wrap gap-1.5 pt-space-2">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-mono">WordPress</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-mono">Elementor</span>
+</div>
+</div>
+<div class="pt-space-6">
+<a class="inline-flex items-center justify-between w-full py-2.5 px-4 rounded-lg bg-secondary-container text-on-surface hover:text-primary hover:bg-surface-bright transition-all font-label-md text-label-md font-semibold" href="https://iroise-demolition.gogency.fr/" rel="noopener noreferrer" target="_blank">
+<span>Visit website</span>
+<span class="material-symbols-outlined text-[18px] text-primary">north_east</span>
+</a>
+</div>
+</div>
+<!-- Client Card 6 -->
+<div class="project-card client websites group flex flex-col justify-between rounded-xl bg-surface-container-low hover:bg-surface-container transition-all p-space-6">
+<div class="flex flex-col gap-space-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-[#5FE6A8]"></span>
+<span class="font-label-sm text-label-sm text-[#5FE6A8] font-mono">LIVE PRODUCTION</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline font-mono">FR_MECHANICAL</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                LC Méca
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Specialized mechanical engineering and precision machine servicing business portal built for rapid client communication and booking inquiries.
+              </p>
+<div class="flex flex-wrap gap-1.5 pt-space-2">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-mono">WordPress</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-mono">Elementor</span>
+</div>
+</div>
+<div class="pt-space-6">
+<a class="inline-flex items-center justify-between w-full py-2.5 px-4 rounded-lg bg-secondary-container text-on-surface hover:text-primary hover:bg-surface-bright transition-all font-label-md text-label-md font-semibold" href="https://lcmeca.gogency.fr/" rel="noopener noreferrer" target="_blank">
+<span>Visit website</span>
+<span class="material-symbols-outlined text-[18px] text-primary">north_east</span>
+</a>
+</div>
+</div>
+<!-- Client Card 7 -->
+<div class="project-card client websites group flex flex-col justify-between rounded-xl bg-surface-container-low hover:bg-surface-container transition-all p-space-6">
+<div class="flex flex-col gap-space-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-[#5FE6A8]"></span>
+<span class="font-label-sm text-label-sm text-[#5FE6A8] font-mono">LIVE PRODUCTION</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline font-mono">FR_WELLNESS</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                Institut Beauté Nature Zen
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Beauty, wellness, and aesthetic care institute platform with treatment rate cards, gift card inquiries, and geolocation directions.
+              </p>
+<div class="flex flex-wrap gap-1.5 pt-space-2">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-mono">WordPress</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-mono">Elementor</span>
+</div>
+</div>
+<div class="pt-space-6">
+<a class="inline-flex items-center justify-between w-full py-2.5 px-4 rounded-lg bg-secondary-container text-on-surface hover:text-primary hover:bg-surface-bright transition-all font-label-md text-label-md font-semibold" href="https://www.nature-zen-esthetique-ilharre.fr/" rel="noopener noreferrer" target="_blank">
+<span>Visit website</span>
+<span class="material-symbols-outlined text-[18px] text-primary">north_east</span>
+</a>
+</div>
+</div>
+<!-- Client Card 8 -->
+<div class="project-card client websites group flex flex-col justify-between rounded-xl bg-surface-container-low hover:bg-surface-container transition-all p-space-6">
+<div class="flex flex-col gap-space-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-[#5FE6A8]"></span>
+<span class="font-label-sm text-label-sm text-[#5FE6A8] font-mono">LIVE PRODUCTION</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline font-mono">FR_COMMERCE</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                EMDG
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Commercial enterprise website providing multi-tier services, responsive client contact forms, and swift asset delivery across France.
+              </p>
+<div class="flex flex-wrap gap-1.5 pt-space-2">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-mono">WordPress</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-mono">Elementor</span>
+</div>
+</div>
+<div class="pt-space-6">
+<a class="inline-flex items-center justify-between w-full py-2.5 px-4 rounded-lg bg-secondary-container text-on-surface hover:text-primary hover:bg-surface-bright transition-all font-label-md text-label-md font-semibold" href="https://www.emdg.fr/" rel="noopener noreferrer" target="_blank">
+<span>Visit website</span>
+<span class="material-symbols-outlined text-[18px] text-primary">north_east</span>
+</a>
+</div>
+</div>
+<!-- Client Card 9 -->
+<div class="project-card client websites group flex flex-col justify-between rounded-xl bg-surface-container-low hover:bg-surface-container transition-all p-space-6">
+<div class="flex flex-col gap-space-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-[#5FE6A8]"></span>
+<span class="font-label-sm text-label-sm text-[#5FE6A8] font-mono">LIVE PRODUCTION</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline font-mono">FR_WOOD_CRAFT</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                The WoodLintz Company
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Artisanal carpentry and wood crafting company website displaying custom furniture portfolios and bespoke woodwork commissions.
+              </p>
+<div class="flex flex-wrap gap-1.5 pt-space-2">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-mono">WordPress</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-mono">Elementor</span>
+</div>
+</div>
+<div class="pt-space-6">
+<a class="inline-flex items-center justify-between w-full py-2.5 px-4 rounded-lg bg-secondary-container text-on-surface hover:text-primary hover:bg-surface-bright transition-all font-label-md text-label-md font-semibold" href="https://woodlintz.fr/" rel="noopener noreferrer" target="_blank">
+<span>Visit website</span>
+<span class="material-symbols-outlined text-[18px] text-primary">north_east</span>
+</a>
+</div>
+</div>
+<!-- Client Card 10 -->
+<div class="project-card client websites group flex flex-col justify-between rounded-xl bg-surface-container-low hover:bg-surface-container transition-all p-space-6">
+<div class="flex flex-col gap-space-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-[#5FE6A8]"></span>
+<span class="font-label-sm text-label-sm text-[#5FE6A8] font-mono">LIVE PRODUCTION</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline font-mono">FR_HOSPITALITY</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                Le 19 Cent 73
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                French restaurant dining website featuring seasonal gastronomical menus, reservation inquiries, and venue photography showcase.
+              </p>
+<div class="flex flex-wrap gap-1.5 pt-space-2">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-mono">WordPress</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-secondary-container font-label-sm text-label-sm font-mono">Elementor</span>
+</div>
+</div>
+<div class="pt-space-6">
+<a class="inline-flex items-center justify-between w-full py-2.5 px-4 rounded-lg bg-secondary-container text-on-surface hover:text-primary hover:bg-surface-bright transition-all font-label-md text-label-md font-semibold" href="https://restaurant-le-19cent73.gogency.fr/" rel="noopener noreferrer" target="_blank">
+<span>Visit website</span>
+<span class="material-symbols-outlined text-[18px] text-primary">north_east</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Architectural Closing Callout Banner -->
+<div class="w-full rounded-xl bg-surface-container-low p-space-8 flex flex-col md:flex-row items-center justify-between gap-space-6 relative overflow-hidden shadow-sm">
+<div class="absolute -right-12 -bottom-12 opacity-5 pointer-events-none">
+<span class="material-symbols-outlined text-[240px] text-primary">precision_manufacturing</span>
+</div>
+<div class="flex flex-col gap-space-2 z-10 max-w-xl">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm text-primary font-mono uppercase tracking-wider">PROJECT COLLABORATION</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">
+            Have a custom architecture or integration challenge?
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Accepting select backend engineering contracts, payment gateway development (Smobilpay, MoMo), and web micro-architectures.
+          </p>
+</div>
+<div class="z-10 flex flex-col sm:flex-row items-center gap-space-3 w-full md:w-auto">
+<a class="w-full sm:w-auto px-6 py-3 rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md font-semibold text-center hover:opacity-90 transition-opacity flex items-center justify-center gap-2" href="mailto:contact@angearsene.dev">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>Initiate Contact</span>
+</a>
+<a class="w-full sm:w-auto px-6 py-3 rounded-lg bg-secondary-container text-primary font-label-md text-label-md font-semibold text-center hover:bg-surface-bright transition-colors flex items-center justify-center gap-2" href="https://wa.me/237699512438" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>WhatsApp Direct</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<script>
+    function filterCatalog(category, el) {
+      const buttons = document.querySelectorAll('.filter-btn');
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-secondary-container', 'text-primary', 'font-semibold');
+        btn.classList.add('text-on-surface-variant');
+      });
+      el.classList.remove('text-on-surface-variant');
+      el.classList.add('bg-secondary-container', 'text-primary', 'font-semibold');
+
+      const cards = document.querySelectorAll('.project-card');
+      const secTechnical = document.getElementById('section-technical');
+      const secClient = document.getElementById('section-client');
+
+      let visibleTech = 0;
+      let visibleClient = 0;
+
+      cards.forEach(card => {
+        if (category === 'all') {
+          card.style.display = 'flex';
+        } else if (card.classList.contains(category)) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+
+        if (card.style.display === 'flex') {
+          if (card.classList.contains('technical')) visibleTech++;
+          if (card.classList.contains('client')) visibleClient++;
+        }
+      });
+
+      if (secTechnical) secTechnical.style.display = visibleTech > 0 ? 'flex' : 'none';
+      if (secClient) secClient.style.display = visibleClient > 0 ? 'flex' : 'none';
+    }
+  </script>
+</div></main><div class="fixed bottom-6 right-6 z-40 flex flex-col gap-2.5"><a class="flex items-center gap-2 px-3 py-2 rounded-xl bg-surface-container border border-outline-variant text-on-surface hover:border-primary-container hover:text-primary transition-all shadow-lg backdrop-blur-md group" href="https://wa.me/237699512438" rel="noopener noreferrer" target="_blank"><span class="w-2.5 h-2.5 rounded-full bg-primary-container group-hover:scale-110 transition-transform"></span><span class="font-label-sm text-label-sm font-semibold tracking-wide">WhatsApp</span><span class="material-symbols-outlined text-[16px] text-primary">chat</span></a><a class="flex items-center gap-2 px-3 py-2 rounded-xl bg-surface-container border border-outline-variant text-on-surface hover:border-primary-container hover:text-primary transition-all shadow-lg backdrop-blur-md group" href="tel:+237699512438"><span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:text-primary transition-colors">call</span><span class="font-label-sm text-label-sm text-on-surface-variant group-hover:text-on-surface transition-colors">+237 699 512 438</span></a></div><footer class="w-full bg-surface-container-lowest border-t border-outline-variant/40 pt-space-12 pb-space-24"><div class="max-w-max-width mx-auto px-gutter-mobile lg:px-gutter-desktop"><div class="grid grid-cols-1 md:grid-cols-4 gap-space-8 pb-space-8 border-b border-outline-variant/30"><div class="md:col-span-2 flex flex-col gap-space-3"><div class="flex items-center gap-space-2"><span class="font-headline-sm text-headline-sm text-primary">NKEN MANDENG ANGE ARSENE</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">Software Engineer specializing in structural systems engineering, scalable backend architecture, and reactive frontend micro-architectures. Operating in Douala, Cameroon.</p><div class="flex items-center gap-space-2 font-label-sm text-label-sm text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-primary">location_on</span><span>Douala, Cameroon (GMT+1)</span></div></div><div class="flex flex-col gap-space-2"><span class="font-label-md text-label-md text-primary uppercase tracking-wider">Navigation</span><nav class="flex flex-col gap-space-1"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="home" href="#">Home</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="about" href="#">About</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="experience" href="#">Experience</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="projects" href="#">Projects</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="contact" href="#">Contact</a></nav></div><div class="flex flex-col gap-space-2"><span class="font-label-md text-label-md text-primary uppercase tracking-wider">Connect</span><div class="flex flex-col gap-space-1"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2" href="https://github.com/AngeArsene" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">terminal</span><span>GitHub</span></a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2" href="https://www.linkedin.com" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[16px]">link</span><span>LinkedIn</span></a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2" href="mailto:contact@angearsene.dev"><span class="material-symbols-outlined text-[16px]">mail</span><span>Email Dispatch</span></a></div></div></div><div class="pt-space-6 flex flex-col sm:flex-row items-center justify-between gap-space-4 font-label-sm text-label-sm text-on-surface-variant"><p>© 2026 Nken Mandeng Ange Arsene. All rights reserved.</p><p class="text-[11px] text-outline">Crafted with Blueprint Architecture Design System. Icons via Google Symbols.</p></div></div></footer></body></html>
