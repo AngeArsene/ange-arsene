@@ -13,7 +13,7 @@ final class Portfolio
             'skills' => self::skills(),
             'experience' => self::experience(),
             'education' => self::education(),
-            'projects' => self::projects(),
+            'projects' => self::projects($locale),
             'channels' => self::channels(),
         ];
     }
@@ -38,6 +38,8 @@ final class Portfolio
                 'contact_body' => 'Tell me what you are building, where it is stuck, or what you want to improve. I will reply by email.',
                 'send_message' => 'Send message', 'name' => 'Your name', 'email' => 'Email address',
                 'message' => 'Project description', 'footer_quote' => 'Good work should feel considered before it feels complete.',
+                'filter_all' => 'All', 'filter_websites' => 'Websites', 'filter_apps' => 'Full-Stack Apps', 'filter_packages' => 'Packages',
+                'open_project' => 'Open project',
             ],
             'fr' => [
                 'home_label' => 'Accueil', 'about_label' => 'À propos', 'work_label' => 'Projets sélectionnés',
@@ -55,6 +57,8 @@ final class Portfolio
                 'contact_body' => 'Dites-moi ce que vous construisez, ce qui bloque ou ce que vous souhaitez améliorer. Je vous répondrai par email.',
                 'send_message' => 'Envoyer le message', 'name' => 'Votre nom', 'email' => 'Adresse email',
                 'message' => 'Description du projet', 'footer_quote' => 'Un bon travail doit être réfléchi avant d\'être terminé.',
+                'filter_all' => 'Tous', 'filter_websites' => 'Sites web', 'filter_apps' => 'Applications full-stack', 'filter_packages' => 'Packages',
+                'open_project' => 'Voir le projet',
             ],
         ];
     }
@@ -92,28 +96,30 @@ final class Portfolio
     }
 
     /** @return list<array<string, mixed>> */
-    private static function projects(): array
+    private static function projects(string $locale): array
     {
+        $isFrench = $locale === 'fr';
+
         return [
-            ['number' => '01', 'category' => 'Websites', 'title' => 'Chaudronnerie Tuyauterie St Laurent', 'description' => 'Professional website for Chaudronnerie Tuyauterie St Laurent.', 'tags' => ['WordPress', 'Elementor'], 'url' => 'https://chaudronneriestlaurent.gogency.fr/'],
-            ['number' => '02', 'category' => 'Websites', 'title' => 'Le Four à Bois', 'description' => 'Restaurant website for Le Four à Bois.', 'tags' => ['WordPress', 'Elementor'], 'url' => 'https://four-a-bois.gogency.fr/'],
-            ['number' => '03', 'category' => 'Websites', 'title' => 'Pony Gones', 'description' => 'Website for Pony Gones.', 'tags' => ['WordPress', 'Responsive Design'], 'url' => 'https://www.pony-gones69.fr/'],
-            ['number' => '04', 'category' => 'Websites', 'title' => 'Dynam’Êcens', 'description' => 'Professional website for Dynam’Êcens.', 'tags' => ['WordPress', 'Elementor'], 'url' => 'https://dynamecens-86.gogency.fr/'],
-            ['number' => '05', 'category' => 'Websites', 'title' => 'Iroise Demolition', 'description' => 'Website for Iroise Demolition.', 'tags' => ['WordPress', 'Responsive Design'], 'url' => 'https://iroise-demolition.gogency.fr/'],
-            ['number' => '06', 'category' => 'Websites', 'title' => 'LC MECA', 'description' => 'Professional website for LC MECA.', 'tags' => ['WordPress', 'Elementor'], 'url' => 'https://lcmeca.gogency.fr/'],
-            ['number' => '07', 'category' => 'Websites', 'title' => 'Institut Beauté Nature Zen', 'description' => 'Website for Institut Beauté Nature Zen in Ilharre.', 'tags' => ['WordPress', 'Responsive Design'], 'url' => 'https://www.nature-zen-esthetique-ilharre.fr/'],
-            ['number' => '08', 'category' => 'Websites', 'title' => 'EMDG', 'description' => 'Professional website for EMDG.', 'tags' => ['WordPress', 'Elementor'], 'url' => 'https://www.emdg.fr/'],
-            ['number' => '09', 'category' => 'Websites', 'title' => 'The WoodLintz Company', 'description' => 'Website for The WoodLintz Company.', 'tags' => ['WordPress', 'Responsive Design'], 'url' => 'https://woodlintz.fr/'],
-            ['number' => '10', 'category' => 'Websites', 'title' => 'Le 19 Cent 73', 'description' => 'Restaurant website for Le 19 Cent 73.', 'tags' => ['WordPress', 'Elementor'], 'url' => 'https://restaurant-le-19cent73.gogency.fr/'],
-            ['number' => '01', 'category' => 'Full-Stack Apps', 'title' => 'Chirper', 'description' => 'Laravel social app with likes, bookmarks, policies, rate limiting and tested workflows.', 'tags' => ['Laravel', 'PHP', 'Pest'], 'url' => 'https://github.com/AngeArsene/chirper'],
-            ['number' => '02', 'category' => 'Full-Stack Apps', 'title' => 'Car Findal Service', 'description' => 'Full-stack application project for a car-finding service.', 'tags' => ['PHP', 'Web App'], 'url' => 'https://github.com/AngeArsene/Car_Findal_Service'],
-            ['number' => '03', 'category' => 'Full-Stack Apps', 'title' => 'WhatsApp Campaign Hub', 'description' => 'WhatsApp marketing application for campaign and contact workflows.', 'tags' => ['Laravel', 'WhatsApp API'], 'url' => 'https://github.com/AngeArsene/WhatsApp_Campaign_Hub'],
-            ['number' => '04', 'category' => 'Full-Stack Apps', 'title' => 'TaskFlow', 'description' => 'Task and workflow management application.', 'tags' => ['Laravel', 'React'], 'url' => 'https://github.com/AngeArsene/TaskFlow'],
-            ['number' => '05', 'category' => 'Full-Stack Apps', 'title' => 'Attendance Monitoring System', 'description' => 'Application for managing and monitoring attendance records.', 'tags' => ['PHP', 'Web App'], 'url' => 'https://github.com/AngeArsene/Attendance-Monitoring-System'],
-            ['number' => '01', 'category' => 'Packages', 'title' => 'chat', 'description' => 'Reusable package project published on GitHub.', 'tags' => ['PHP', 'Package'], 'url' => 'https://github.com/AngeArsene/chat'],
-            ['number' => '02', 'category' => 'Packages', 'title' => 'woowa-webhooks', 'description' => 'Reusable webhook package project published on GitHub.', 'tags' => ['PHP', 'Webhooks'], 'url' => 'https://github.com/AngeArsene/woowa-webhooks'],
-            ['number' => '03', 'category' => 'Packages', 'title' => 'wc-smobilpay', 'description' => 'WooCommerce Smobilpay integration package for mobile-money payments.', 'tags' => ['PHP', 'WooCommerce', 'Smobilpay'], 'url' => 'https://github.com/AngeArsene/wc-smobilpay'],
-            ['number' => '04', 'category' => 'Packages', 'title' => 'PHP MVC Framework', 'description' => 'Lightweight PHP MVC framework project built for reusable application foundations.', 'tags' => ['PHP', 'MVC'], 'url' => 'https://github.com/AngeArsene/php_mvc_framework'],
+            ['number' => '01', 'category_key' => 'websites', 'category' => $isFrench ? 'Sites web' : 'Websites', 'title' => 'Chaudronnerie Tuyauterie St Laurent', 'description' => $isFrench ? 'Site professionnel pour Chaudronnerie Tuyauterie St Laurent.' : 'Professional website for Chaudronnerie Tuyauterie St Laurent.', 'tags' => ['WordPress', 'Elementor'], 'url' => 'https://chaudronneriestlaurent.gogency.fr/'],
+            ['number' => '02', 'category_key' => 'websites', 'category' => $isFrench ? 'Sites web' : 'Websites', 'title' => 'Le Four à Bois', 'description' => $isFrench ? 'Site du restaurant Le Four à Bois.' : 'Restaurant website for Le Four à Bois.', 'tags' => ['WordPress', 'Elementor'], 'url' => 'https://four-a-bois.gogency.fr/'],
+            ['number' => '03', 'category_key' => 'websites', 'category' => $isFrench ? 'Sites web' : 'Websites', 'title' => 'Pony Gones', 'description' => $isFrench ? 'Site professionnel pour Pony Gones.' : 'Website for Pony Gones.', 'tags' => ['WordPress', 'Responsive Design'], 'url' => 'https://www.pony-gones69.fr/'],
+            ['number' => '04', 'category_key' => 'websites', 'category' => $isFrench ? 'Sites web' : 'Websites', 'title' => 'Dynam’Êcens', 'description' => $isFrench ? 'Site professionnel pour Dynam’Êcens.' : 'Professional website for Dynam’Êcens.', 'tags' => ['WordPress', 'Elementor'], 'url' => 'https://dynamecens-86.gogency.fr/'],
+            ['number' => '05', 'category_key' => 'websites', 'category' => $isFrench ? 'Sites web' : 'Websites', 'title' => 'Iroise Demolition', 'description' => $isFrench ? 'Site professionnel pour Iroise Demolition.' : 'Website for Iroise Demolition.', 'tags' => ['WordPress', 'Responsive Design'], 'url' => 'https://iroise-demolition.gogency.fr/'],
+            ['number' => '06', 'category_key' => 'websites', 'category' => $isFrench ? 'Sites web' : 'Websites', 'title' => 'LC MECA', 'description' => $isFrench ? 'Site professionnel pour LC MECA.' : 'Professional website for LC MECA.', 'tags' => ['WordPress', 'Elementor'], 'url' => 'https://lcmeca.gogency.fr/'],
+            ['number' => '07', 'category_key' => 'websites', 'category' => $isFrench ? 'Sites web' : 'Websites', 'title' => 'Institut Beauté Nature Zen', 'description' => $isFrench ? 'Site de l’Institut Beauté Nature Zen à Ilharre.' : 'Website for Institut Beauté Nature Zen in Ilharre.', 'tags' => ['WordPress', 'Responsive Design'], 'url' => 'https://www.nature-zen-esthetique-ilharre.fr/'],
+            ['number' => '08', 'category_key' => 'websites', 'category' => $isFrench ? 'Sites web' : 'Websites', 'title' => 'EMDG', 'description' => $isFrench ? 'Site professionnel pour EMDG.' : 'Professional website for EMDG.', 'tags' => ['WordPress', 'Elementor'], 'url' => 'https://www.emdg.fr/'],
+            ['number' => '09', 'category_key' => 'websites', 'category' => $isFrench ? 'Sites web' : 'Websites', 'title' => 'The WoodLintz Company', 'description' => $isFrench ? 'Site professionnel pour The WoodLintz Company.' : 'Website for The WoodLintz Company.', 'tags' => ['WordPress', 'Responsive Design'], 'url' => 'https://woodlintz.fr/'],
+            ['number' => '10', 'category_key' => 'websites', 'category' => $isFrench ? 'Sites web' : 'Websites', 'title' => 'Le 19 Cent 73', 'description' => $isFrench ? 'Site du restaurant Le 19 Cent 73.' : 'Restaurant website for Le 19 Cent 73.', 'tags' => ['WordPress', 'Elementor'], 'url' => 'https://restaurant-le-19cent73.gogency.fr/'],
+            ['number' => '01', 'category_key' => 'apps', 'category' => $isFrench ? 'Applications full-stack' : 'Full-Stack Apps', 'title' => 'Chirper', 'description' => $isFrench ? 'Application sociale Laravel avec likes, favoris, policies, limitation de débit et workflows testés.' : 'Laravel social app with likes, bookmarks, policies, rate limiting and tested workflows.', 'tags' => ['Laravel', 'PHP', 'Pest'], 'url' => 'https://github.com/AngeArsene/chirper'],
+            ['number' => '02', 'category_key' => 'apps', 'category' => $isFrench ? 'Applications full-stack' : 'Full-Stack Apps', 'title' => 'Car Findal Service', 'description' => $isFrench ? 'Application full-stack dédiée à la recherche de véhicules.' : 'Full-stack application project for a car-finding service.', 'tags' => ['PHP', 'Web App'], 'url' => 'https://github.com/AngeArsene/Car_Findal_Service'],
+            ['number' => '03', 'category_key' => 'apps', 'category' => $isFrench ? 'Applications full-stack' : 'Full-Stack Apps', 'title' => 'WhatsApp Campaign Hub', 'description' => $isFrench ? 'Application WhatsApp pour les campagnes et la gestion des contacts.' : 'WhatsApp marketing application for campaign and contact workflows.', 'tags' => ['Laravel', 'WhatsApp API'], 'url' => 'https://github.com/AngeArsene/WhatsApp_Campaign_Hub'],
+            ['number' => '04', 'category_key' => 'apps', 'category' => $isFrench ? 'Applications full-stack' : 'Full-Stack Apps', 'title' => 'TaskFlow', 'description' => $isFrench ? 'Application de gestion des tâches et des workflows.' : 'Task and workflow management application.', 'tags' => ['Laravel', 'React'], 'url' => 'https://github.com/AngeArsene/TaskFlow'],
+            ['number' => '05', 'category_key' => 'apps', 'category' => $isFrench ? 'Applications full-stack' : 'Full-Stack Apps', 'title' => 'Attendance Monitoring System', 'description' => $isFrench ? 'Application de gestion et de suivi des présences.' : 'Application for managing and monitoring attendance records.', 'tags' => ['PHP', 'Web App'], 'url' => 'https://github.com/AngeArsene/Attendance-Monitoring-System'],
+            ['number' => '01', 'category_key' => 'packages', 'category' => $isFrench ? 'Packages' : 'Packages', 'title' => 'chat', 'description' => $isFrench ? 'Package réutilisable publié sur GitHub.' : 'Reusable package project published on GitHub.', 'tags' => ['PHP', 'Package'], 'url' => 'https://github.com/AngeArsene/chat'],
+            ['number' => '02', 'category_key' => 'packages', 'category' => $isFrench ? 'Packages' : 'Packages', 'title' => 'woowa-webhooks', 'description' => $isFrench ? 'Package de webhooks réutilisable publié sur GitHub.' : 'Reusable webhook package project published on GitHub.', 'tags' => ['PHP', 'Webhooks'], 'url' => 'https://github.com/AngeArsene/woowa-webhooks'],
+            ['number' => '03', 'category_key' => 'packages', 'category' => $isFrench ? 'Packages' : 'Packages', 'title' => 'wc-smobilpay', 'description' => $isFrench ? 'Intégration WooCommerce Smobilpay pour les paiements mobile money.' : 'WooCommerce Smobilpay integration package for mobile-money payments.', 'tags' => ['PHP', 'WooCommerce', 'Smobilpay'], 'url' => 'https://github.com/AngeArsene/wc-smobilpay'],
+            ['number' => '04', 'category_key' => 'packages', 'category' => $isFrench ? 'Packages' : 'Packages', 'title' => 'PHP MVC Framework', 'description' => $isFrench ? 'Framework MVC PHP léger pour créer des bases applicatives réutilisables.' : 'Lightweight PHP MVC framework project built for reusable application foundations.', 'tags' => ['PHP', 'MVC'], 'url' => 'https://github.com/AngeArsene/php_mvc_framework'],
         ];
     }
 

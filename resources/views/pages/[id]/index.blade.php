@@ -38,6 +38,6 @@ name('portfolio.home');
 
     <section class="mx-auto max-w-7xl px-6 pb-24 sm:px-10 lg:px-16 lg:pb-36">
         <div class="flex flex-wrap items-end justify-between gap-6"><div><x-eyebrow>{{ $content['work_label'] }}</x-eyebrow><h2 class="display-type text-4xl text-paper sm:text-6xl">{{ $content['work_heading'] }}</h2></div><a href="{{ route('portfolio.work', ['id' => $locale]) }}" class="text-sm font-semibold text-gold">See all work ↗</a></div>
-        <div class="mt-12 grid gap-10 md:grid-cols-2 lg:grid-cols-3">@foreach (array_slice($projects, 0, 3) as $project)<x-project-card :project="$project" />@endforeach</div>
+        <div class="mt-12 grid gap-10 md:grid-cols-2 lg:grid-cols-3">@foreach (array_slice($projects, 0, 3) as $project)<x-project-card :project="$project" :content="$content" />@endforeach</div>
     </section>
 </x-layouts.portfolio>

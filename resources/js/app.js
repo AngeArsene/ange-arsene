@@ -23,7 +23,7 @@ projectFilters.forEach((filter) => {
 		});
 
 		projectCards.forEach((card) => {
-			card.hidden = selectedCategory !== 'All' && card.dataset.projectCategory !== selectedCategory;
+			card.hidden = selectedCategory !== 'all' && card.dataset.projectCategory !== selectedCategory;
 		});
 	});
 });
